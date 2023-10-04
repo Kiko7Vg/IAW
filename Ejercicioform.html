@@ -1,0 +1,191 @@
+<html>
+    <head lang="es">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Actividad 7</title>
+        <style>
+            div{border: 5px solid green;
+            padding: 15px; 
+            background-color: white   }
+        </style>
+    </head>
+    <body style="background-color: pink; ">
+        <div>
+            <form>
+            <fieldset style="border-color: black;">
+                <table>
+                    <legend>Datos personales</legend>
+                <tr>
+                    <td><label for="Apellidos">Apellidos:</label></td>
+                    <td><label for="Nombre">Nombre:</label></td>
+                    <td><label for="DNI">DNI: </label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="Apellidos" name="Apellidos" type="text" size="30">
+                    </td>
+                    
+                    <td> <input id="Nombre" name="Nombre" type="text" size="20"></td>
+                    <td> <input id="DNI" name="DNI" type="text" size="12"></td>
+                </tr>
+                <tr>
+                    <td><label for="Nacido">Nacido/a en: </label></td>
+                    <td><label for="Provincia">Provincia:</label></td>
+                    <td><label for="Edad">Fecha Nacimiento (dd/mm/aaaa): </label></td>
+                </tr>
+                <tr>
+                    <td><input id="Nacido" name="Nacido" type="text" size="30"></td>
+                    <td> <input list="Provincias" id="Provincia" name="Provincia" ></td>
+                    <datalist id="Provincias">
+                        <option value="Valencia"></option>
+                        <option value="Extremadura"></option>
+                        <option value="Madrid"></option>
+                        <option value="Anadalucia"></option>
+                    </datalist>
+                    <td> <input id="Edad" name="Edad" type="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="Domicilio">Domicilio(calle,plaza y número): </label></td>
+                    <td><label for="CP">Codigo postal: </label></td>
+                </tr>
+                <tr>
+                    <td><input id="Domicilio" name="Domicilo" type="text" size="40"></td>
+                    <td> <input id="CP" name="CP" type="text" size="5"></td>
+                </tr>
+                <tr>
+                    <td><label for="Localidad">Localidad: </label></td>
+                    <td><label for="Provincia">Provincia:</label></td>
+                    <td><label for="Telefono">Telefono: </label></td>
+                </tr>
+                <tr>
+                    <td><input id="Localidad" name="Localidad" type="text"></td>
+                    <td> <input list="Provincias" id="Provincia" name="Provincia" ></td>
+                    <datalist id="Provincias">
+                        <option value="Valencia" selected></option>
+                        <option value="Extremadura"></option>
+                        <option value="Madrid"></option>
+                        <option value="Anadalucia"></option>
+                    </datalist>
+                    <td> <input id="Telefono" name="Telefono" type="tel"></td>
+                </tr>
+                </table>
+            </fieldset>
+            </form>
+
+
+
+
+
+
+            <form>
+                <fieldset style="border-color: black;">
+                    <table>
+                        <legend>Solicitud</legend>
+                        <p>El/la que se subscribe desea ser admitido en este centro para cursar el ciclo formativo de grado superior: </p>
+                        <label for="CF">Ciclo Formativo: </label>
+                        <input list="CF1" id="CF" name="CF">
+                        <datalist id="CF1">
+                            <option value="ASIR"></option>
+                            <option value="SMR"></option>
+                            <option value="DAW"></option>
+                            <option value="DAM"></option>
+                        </datalist>
+                        <p>En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:</p>
+                        <tr>
+                            <th><label for="CF2">Ciclos Formativos</label></th>
+                            <th><label for="Centros">Centros</label></th>
+                            <th><label for="Localidad2">Localidad</label></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="CF2" name="CF2" type="text">
+                            </td>
+                            <td>
+                                <input id="Centros" name="Centros" type="text">
+                            </td>
+                            <td>
+                                <input id="Localidad2" name="Localidad2" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="CF2" name="CF2" type="text">
+                            </td>
+                            <td>
+                                <input id="Centros" name="Centros" type="text">
+                            </td>
+                            <td>
+                                <input id="Localidad2" name="Localidad2" type="text">
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <label for="Especial">Modalidad de horario especial (marque) : </label>
+                    <input id="Especial" name="Especial" type="checkbox">
+                </fieldset>
+                </form>
+
+
+
+
+                
+                <form>
+                    <fieldset style="border-color: black;">
+                        <table>
+                            <legend>Documentación Presentada</legend>
+                            <tr>
+                                <td>
+                                    <label for="Fotocopia">Fotocopia DNI:</label>
+                                    <input id="Fotocopia" name="Fotocopia" type="checkbox">
+                                </td>
+                                <td>
+                                    <label for="CA">Certificado Académico</label>
+                                    <input id="CA" name="Fotocopia" type="checkbox">
+                                </td>
+                            </tr>
+
+
+                        </table>
+                        <input id="OD" name="OD" type="checkbox">
+                        <label for="OD">Otros Documentos Especifique: </label>
+                        <input id="OD" name="OD" type="text">
+                    </fieldset>
+                    </form>
+
+
+                    <p>Comprobaciones: </p>
+                    Apellidos<input id="IdElementoMostrar" name="Apellidos" type="text" size="30">
+                    <script>
+
+                        const rango = document.getElementById("Apellidos")
+                        const numero = document.getElementById("IdElementoMostrar")
+                        rango.onchange = function(){
+                        numero.value = rango.value;
+                        }
+                        </script>
+                    Edad<input id="IdElementoMostrar1" name="Edad" type="date"></td>
+                    <script>
+
+                        const rango1 = document.getElementById("Edad")
+                        const numero1 = document.getElementById("IdElementoMostrar1")
+                        rango1.onchange = function(){
+                        numero1.value = rango1.value;
+                        }
+                        </script>
+                    <br>
+                    Modalidad Horario Especial<input id="IdElementoMostrar2" name="Especial" type="checkbox">
+                    <script>
+
+                        const rango2 = document.getElementById("Especial")
+                        const numero2 = document.getElementById("IdElementoMostrar2")
+                        rango2.onchange = function(){
+                            console.log(rango2.checked);
+                        numero2.checked = rango2.checked;
+                        }
+                        </script>
+
+        </div>    
+    </body>
+    
+</html>
